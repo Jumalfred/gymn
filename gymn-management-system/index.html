@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <h2>JASDEs GYMN OPERATIONS</h2>
+    <header>
+        <aside id="menu">
+            <aside id="aside"></aside>
+            <aside id="aside"></aside>
+            <aside id="aside"></aside>
+        </aside>
+        <span id="welcome">Welcome Alfred Juma</span>
+        <span id="s-btn"><img src="search.png" alt="search" srcset="" id="search-img"></span>
+        <input type="search" name="search" id="search" placeholder="search......">
+    </header>
+    <div id="prof-vid">
+    <div id="bar-sect">
+        <img src="juma (2).jpg" alt="USER" id="user-img"><br>
+        <a href="#">User profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Activities</a>
+        <a href="#">Wallet</a>
+        <a href="#">Settings</a>
+    </div>
+    <video src="gymn.mp4" width="772px" height="360" autoplay loop muted></video>
+    </div>
+    <video src="gymn.mp4" width="1000px" height="374" id="disap" autoplay loop muted></video>
+    <article>
+        <div id="product">
+            <img src="prop1.jpg">
+            <b>Ksh : 500.00</b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop2.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop3.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop4.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop5.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop6.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop7.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop8.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop9.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop10.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop11.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop12.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop13.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop14.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop15.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop16.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop17.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop18.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop19.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+        <div id="product">
+            <img src="prop20.jpg">
+            <b>Ksh : </b>
+            <button>BOOK</button>
+        </div>
+    </article>
+    <footer>
+        <div id="footer">
+            <h5 id="head-footer">CONTACT US</h5>
+            <h6>
+                <a href="tel:+254705788336"><img src="phone.jpg">  0705788336</a>
+                <a href="mailto:jumextoginga@gmail.com"><img src="mail.jpg">  Email</a>
+                <a href="http://wa.me/+254705788336"><img src="whats.jpg">  WhatsApp</a>
+                <a href="http://www.facebook.com/alfred.juma.9022"><img src="fb.jpg">  Facebook</a>
+            </h6>
+        </div>
+        <div id="footer">
+                <h5 id="head-footer">ABOUT</h5>
+                <h6>
+                   <span id="about">   We are a company that are operating strickly on body fitting and weight loss,operating under the governments rules and rugulations.</span><br>
+                   <span id="about">   Openned 24hrs</span>
+                </h6>
+                <h3>© 2022 JASDEs solutions</h3>
+        </div>
+        <div id="footer">
+            <h5 id="head-footer">LOCATION</h5>
+            <h6>
+                <span id="about">
+                    <li>50 off Kitengela prisons road</li>
+                    <li>Opposite Kitengela service center</li>
+                   With main office at JASDEs building along Nairobi-Namanga Highway
+                </span>
+            </h6>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#menu").click(function(){
+            $("#prof-vid").slideToggle();
+            $("#disap").slideToggle();
+        })
+    })
+    let btn = document.querySelectorAll("button");
+    for(let i=0; i < btn.length; i++){
+        btn[i].onclick = function(){
+            if(
+            confirm("Do you want to book the space of this facility for body fitnes")){
+                prompt("Enter your Mpesa number for payment here :")
+            }
+            else{
+                alert("Welcome back,chose your desired fitness tool");
+            }
+        }
+    } 
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

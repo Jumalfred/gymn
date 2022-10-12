@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="dashboard" style="height: 100%;">
+      <aside id="nav-bar">
+          <img src="logo.png">
+          <a href="javascript:void(0)" onclick="myFunc()">DASHBOARD</a>
+          <a href="javascript:void(0)">STAFF MEMBERS</a>
+          <a href="javascript:void(0)">ADD MEMBERS</a>
+          <a href="javascript:void(0)">FACILITIES</a>
+          <a href="javascript:void(0)">HEALTH STATUS</a>
+          <a href="javascript:void(0)">PLANNINGS</a>
+          <a href="javascript:void(0)">SETTINGS</a><br>
+          <a href="javascript:void(0)">HELP</a><br>
+      </aside>
+      <div id="myModal" class="modal">
+          <div id="add_user">
+            <fieldset>
+                <legend>NEW MEMBER</legend>
+                <aside id="left">
+              <label for="Name">First Name :<br>
+                <input type="text" name="Name" id="first_name">
+              </label><br>
+              <label for="Name">Second Name :<br>
+                <input type="text" name="Name" id="first_name">
+              </label><br>
+              <label for="Name">Surname :<br>
+                <input type="text" name="Name" id="first_name">
+              </label><br>
+              <label for="birth">Date of birth :<br>
+                <input type="date" name="birth" id="birth">
+              </label>
+              </aside>
+              <aside id="right">
+                <label for="Name">Phone No :<br>
+                  <input type="number" name="Name" id="phone">
+                </label><br>
+                <label for="Name">Email :<br>
+                  <input type="email" name="Name" id="email">
+                </label><br>
+                <label for="Name">Place of Origin :<br>
+                  <input type="text" name="Name" id="location">
+                </label><br>
+                <label for="gender">Gender :<br>
+                  <input type="radio" name="gender" id="gender"> Male <br>
+                  <input type="radio" name="gender" id="gender"> Female
+                </label>
+              </aside>
+            </fieldset>
+            <button id="btn_sub_user">SUBMIT</button>
+            <button onclick="disappear()">CANCEL</button>
+          </div>
+      </div>
+      <div id="myModal1" class="modal">
+          <div id="plannings">
+            <fieldset>
+                <legend>PLANNINGS</legend>
+                <h3>THIS WEEK PLANNINGS</h2>
+                <table>
+                  <tr>
+                      <th>DAY</th>
+                      <th>7am - 9am</th>
+                      <th>Break</th>
+                      <th>9.30am - 11.30am</th>
+                      <th>Break</th>
+                      <th>12am - 2pm</th>
+                      <th>Break</th>
+                      <th>2.30pm - 4.30</th>
+                      <th>Break</th>
+                      <th>5pm - 7pm</th>
+                  </tr>
+                  <tr>
+                      <td>MON</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                  <tr>
+                      <td>TUE</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                  <tr>
+                      <td>WED</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                  <tr>
+                      <td>THU</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                  <tr>
+                      <td>FRI</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                  <tr>
+                      <td>SAT</td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                      <td></td>
+                      <td>N/A</td>
+                  </tr>
+                </table>
+            </fieldset>
+            <button id="btn_sub_user">PREPARE</button>
+            <button onclick="disappear()">EXIT</button>
+          </div>
+      </div>
+    <div id="client-int">
+        <h1><i>CLIENTS</i></h1>
+    <h3><i>NEW MEMBERS</i></h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>NAME </th>
+            <th> PHONE NUMBER </th>
+            <th>EMAIL </th>
+        </tr>
+        <tr>
+            <td class="td1"></td>
+            <td>Thomas Mwakise Mwollo</td>
+            <td>0767542398</td>
+            <td>tom254@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+          <td>Harry Kamau  Njoroge</td>
+          <td>0767542398</td>
+          <td>harrykam54@gmail.com</td>
+      </tr>
+    </table>
+    <h3><i>ONLINE SUBSCRIBERS</i></h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>NAME </th>
+            <th> PHONE NUMBER </th>
+            <th>EMAIL </th>
+        </tr>
+        <tr>
+            <td class="td2"></td>
+            <td>Joseph Ofweny Ouma</td>
+            <td>0767542398</td>
+            <td>josephouma0254@gmail.com</td>
+        </tr>
+    </table>
+    <h3><i>MEMBERS</i></h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>NAME </th>
+            <th> PHONE NUMBER </th>
+            <th>EMAIL </th>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td>Alfred Juma Oginga</td>
+            <td>0705788336</td>
+            <td>jumalfred@gmail.com</td>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td>Juma Alfred Oginga</td>
+            <td>0745591865</td>
+            <td>jumextoginga@gmail.com</td>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td>Oginga Alfred Juma</td>
+            <td>0728735688</td>
+            <td>ogingalfred@gmail.com</td>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td>David Chelang'at Kiprop</td>
+            <td>0735439767</td>
+            <td>davidkiprop@gmail.com</td>
+        </tr>
+        <tr>
+            <td class="td1"></td>
+            <td>Joseph Ofweny Ouma</td>
+            <td>0797542398</td>
+            <td>josephouma0254@gmail.com</td>
+        </tr>
+        <tr>
+            <td class="td1"></td>
+            <td>Thomas Mwakise Mwollo</td>
+            <td>0713343324</td>
+            <td>tom254@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="td1"></td>
+          <td>Harry Kamau  Njoroge</td>
+          <td>0767238974</td>
+          <td>harrykam54@gmail.com</td>
+      </tr>
+    </table>
+</table>
+<h3><i>STAFF MEMBERS</i></h3>
+<table>
+    <tr>
+        <th></th>
+        <th>NAME </th>
+        <th> PHONE NUMBER </th>
+        <th>EMAIL </th>
+        <th>ROLE</th>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td>Benard Okoth</td>
+        <td>0767342098</td>
+        <td>benokoth@gmail.com</td>
+        <td>Engineer</td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td>Roony Ouma</td>
+        <td>076357378</td>
+        <td>oumarooney0254@gmail.com</td>
+        <td>cleaner</td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td>Felix Nyaboke</td>
+        <td>0763788928</td>
+        <td>felofelixo0254@gmail.com</td>
+        <td>cooker</td>
+    </tr>
+</table>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
