@@ -1,18 +1,20 @@
 
         body{
-            background-color: blue;
+            /* background-color: blue; */
             padding: 0;
             margin: 0;
         }
         article{
-            width: 1000px;
+            width: 93%;
             height: fit-content;
             display: flex;
            flex-wrap: wrap;
            background-color: antiquewhite;
+           margin: auto;
+           /* border-radius: 20px; */
         }
         #product{
-            width: 235.7px;
+            width: 19%;
             height: 300px;
             background-image: linear-gradient(to right, blue, yellow);
             border: 2px solid black;
@@ -26,9 +28,15 @@
             color: white;
         }
         footer{
-            width: 1000px;
+            width: 100%;
             height: fit-content;
             display: flex;
+            flex-direction: column;
+        }
+        #foot_flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
         #footer{
             padding-top: 55px;
@@ -36,9 +44,10 @@
             height: 240px;
             padding: 10px;
             background-color: rgb(102, 94, 94);
+            border-radius: 0;
         }
         header{
-            width: 990px;
+            width: 92.5%;
             height: 35px;
             background-color: rgb(228, 202, 169);
             padding: 5px;
@@ -46,6 +55,7 @@
             position: sticky;
             top: 0;
             z-index: 9999;
+            margin: auto;
         }
         #search{
             float: right;
@@ -173,7 +183,7 @@
             border-bottom: 2px solid rgb(228, 210, 210);
         }
         #product > img{
-            width: 235.7px;
+            width: 100%;
             height: 260px;
             border-radius: 10px 10px 0 0;
         }
@@ -202,7 +212,8 @@
         video{
             object-fit: cover;
             bottom: 0;
-            margin-bottom: 0;
+            margin: 0 auto;
+            display: block;
         }
           div > video{
             float: right;
@@ -214,13 +225,14 @@
             display: flex;
             flex-wrap: wrap;
             display: none;
-            width: 1000px;
+            width: 93%;
+            margin: auto;
             background-color: green;
             position: relative;
         }
         #dashboard{
             display: flex;
-            width: 1138px;
+            width: 100%;
             height: 700px;
             background-color: rgb(160, 210, 226);
         }
@@ -231,6 +243,7 @@
             float: left;
             padding: 10px;
             padding-top: 20px;
+            border-radius: 0;
         }
         #admin{
             float: right;
@@ -241,43 +254,51 @@
             background-color: white;
         }
         #nav-cont{
-            width: 184px;
-            height: 110px;
+            width: 28.42%;
+            height: 125px;
             background-color: rgb(92, 88, 88);
-            margin: 20px;
+            margin: 1.5%;
+            /* margin-left: 55px; */
             color: white;
-            padding: 8px;
-            padding-top: 20px;
+            padding: 0.8%;
+            padding-top: 1%;
             box-shadow: 10px 12px 7px rgb(41, 39, 39);
         }
         #nav-graph{
-            width: min-content;
+            width: 74%;
             display: flex;
             flex-wrap: wrap;
             height: fit-content;
         }
         #graphs{
-            width: 660px;
+            width: 95%;
             height: 300px;
             background-color: rgb(139, 184, 169);
-            margin: 20px;
-            padding: 10px;
+            margin: 1.98%;
+            padding: 3%;
+            padding-top: 1.5%;
         }
         #graph{
-            width: 233px;
-            height: 670px;
-            margin: 10px;
+            width: 22.9%;
+            height: 678px;
+            margin: 1%;
             float: right;
             right: 0;
             top: 0;
             color: white;
-            padding: 6px;
+            padding: 0.5%;
             background-color: rgb(66, 56, 75);
         }
-        h2{
+       footer > h3, h2{
             height: 30px;
-            width: 1060px;
+            width: 100%;
             text-align: center;
+            color: white;
+            background-color: rgb(59, 49, 49);
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: 18px;
+            padding-bottom: 15px;
         }
        #nav-cont > img , #nav-bar > img{
             margin-top: 5px;
@@ -306,7 +327,7 @@
             border-bottom: 1.5px solid black;
             color: white;
         }
-        #num, #num1, #num2{
+      #nav-cont > h3, #num, #num1, #num2{
             float: right;
             right: 0;
             bottom: 0;
@@ -402,7 +423,7 @@
         }
         #mesage{
             display: inline-block;
-            width: 190px;
+            width: 215px;
             height: 35px;
             border: none;
             color: black;
@@ -427,7 +448,7 @@
             background-color: rgb(103, 221, 103);
         }
         #div{
-            width: 218px;
+            width: 100%;
             height: 300px;
             /* height: 100vh; */
             /* position: fixed; */
@@ -459,7 +480,7 @@
             border: 1px solid black;
         }
         table{
-            width: max-content;
+            width: 100%;
             padding: 8px;
         }
         th,td{
@@ -492,9 +513,8 @@
             border-radius: 0;
         }
         footer > h3{
-            text-align: center;
-            display: inline-block;
-            width: 1138px;
+            padding-bottom: 10px;
+            padding-top: 23px;
         }
         #add_user,#plannings{
           width: 60%;
