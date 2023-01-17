@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRATION</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>SYSTEM ADMINISTRATION</h2>
+    <div id="dashboard">
+        <aside id="nav-bar">
+            <img src="logo.png">
+            <a href=" " class="nav-item" data-url="admin.html">DASHBOARD</a>
+            <a href=" " class="nav-item" data-url="user.html">STAFF MEMBERS</a>
+            <a href=" " class="nav-item" data-url="add" data-modal="member">ADD MEMBERS</a>
+            <a href=" " class="nav-item" data-url="index.html">FACILITIES</a>
+            <a href=" " class="nav-item" data-url="health.html">HEALTH STATUS</a>
+            <a href=" " class="nav-item" data-url="plan" data-modal="plan">PLANNINGS</a>
+            <a href=" " class="nav-item" data-url="settings.html">SETTINGS</a><br>
+            <a href=" " class="nav-item" data-url="help">HELP</a><br>
+        </aside>
+        <div id="myModal" class="modal">
+            <div id="add_user">
+                <fieldset>
+                    <legend>NEW MEMBER</legend>
+                    <aside id="left">
+                        <label for="Name">First Name :<br>
+                            <input type="text" name="Name" id="first_name">
+                        </label><br>
+                        <label for="Name">Second Name :<br>
+                            <input type="text" name="Name" id="first_name">
+                        </label><br>
+                        <label for="Name">Surname :<br>
+                            <input type="text" name="Name" id="first_name">
+                        </label><br>
+                        <label for="birth">Date of birth :<br>
+                            <input type="date" name="birth" id="birth">
+                        </label>
+                    </aside>
+                    <aside id="right">
+                        <label for="Name">Phone No :<br>
+                            <input type="number" name="Name" id="phone">
+                        </label><br>
+                        <label for="Name">Email :<br>
+                            <input type="email" name="Name" id="email">
+                        </label><br>
+                        <label for="Name">Place of Origin :<br>
+                            <input type="text" name="Name" id="location">
+                        </label><br>
+                        <label for="gender">Gender :<br>
+                            <input type="radio" name="gender" id="gender"> Male <br>
+                            <input type="radio" name="gender" id="gender"> Female
+                        </label>
+                    </aside>
+                </fieldset>
+                <button id="btn_sub_user">SUBMIT</button>
+                <button onclick="disappear()">CANCEL</button>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <div id="plannings">
+                <fieldset>
+                    <legend>PLANNINGS</legend>
+                    <h3>THIS WEEK PLANNINGS</h2>
+                        <table>
+                            <tr>
+                                <th>DAY</th>
+                                <th>7am - 9am</th>
+                                <th>Break</th>
+                                <th>9.30am - 11.30am</th>
+                                <th>Break</th>
+                                <th>12am - 2pm</th>
+                                <th>Break</th>
+                                <th>2.30pm - 4.30</th>
+                                <th>Break</th>
+                                <th>5pm - 7pm</th>
+                            </tr>
+                            <tr>
+                                <td>MON</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>TUE</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>WED</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>THU</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>FRI</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>SAT</td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                                <td></td>
+                                <td>N/A</td>
+                            </tr>
+                        </table>
+                </fieldset>
+                <button id="btn_sub_user">PREPARE</button>
+                <button onclick="disappear()">EXIT</button>
+            </div>
+        </div>
+        <article id="admin">
+            <div id="nav-graph">
+                <div id="nav-cont">
+                    <span>NEW MEMBERS</span><br><br>
+                    <img src="team.png">
+                    <span id="num">01</span>
+                </div>
+                <div id="nav-cont">
+                    <span>ONLINE BOOKINGS</span><br><br>
+                    <img src="online-book.png">
+                    <span id="num1">01</span>
+                </div>
+                <div id="nav-cont">
+                    <span>TOTAL MEMBERS</span><br><br>
+                    <img src="people.png">
+                    <span id="num2">04</span>
+                </div>
+                <div id="nav-cont">
+                    <span>CURRENT INCOME</span><br><br>
+                    <img src="money.png">
+                    <h3>Ksh : </h3>
+                </div>
+                <div id="nav-cont">
+                    <span>AMOUNT DEBITED</span><br><br>
+                    <img src="money.png">
+                    <h3>Ksh : </h3>
+                </div>
+                <div id="nav-cont">
+                    <span>AMOUNT INN</span><br><br>
+                    <img src="money.png">
+                    <h3>Ksh : </h3>
+                </div>
+                <div id="graphs">
+                    <span class="heading">2022 GRAPH FOR ATTENDANCE</span>
+                    <section id="drawn">
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                        <span class="month"></span>
+                    </section>
+                    <section id="months">
+                        <span id="jan">JAN</span>
+                        <span id="feb">FEB</span>
+                        <span id="martch">MAR</span>
+                        <span id="apr">APR</span>
+                        <span id="may">MAY</span>
+                        <span id="june">JUN</span>
+                        <span id="july">JUL</span>
+                        <span id="august">AUG</span>
+                        <span id="sept">SEP</span>
+                        <span id="oct">OCT</span>
+                        <span id="nov">NOV</span>
+                        <span id="dec">DEC</span>
+                    </section>
+                    <h4 class="upd-graph">
+                        <span class="graph">ONLINE : 01</span>
+                        <span class="graph">MEMBERS : 03</span>
+                    </h4>
+                </div>
+            </div>
+            <div id="graph">
+                <h3>NOTIFICATIONS</h3>
+                <select name="Notification" id="notify">
+                    <option>Attendance</option>
+                    <option>Invites</option>
+                    <option>Messages</option>
+                    <option>comments</option>
+                </select>
+                <section class="attendance pink">
+                    <h4>ATTENDANCE</h4>
+                    <hr>
+                    <ol>
+                        <li>Alfred Juma</li>
+                        <li id="attendance"></li>
+                    </ol>
+                </section>
+                <section class="invites pink">
+                    <h4>INVITES</h4>
+                    <hr>
+                    <ol>
+                        <li>Juma invited Oginga</li>
+                        <li id="invites"></li>
+                    </ol>
+                </section>
+                <section class="messages pink">
+                    <h4>MESSAGES</h4>
+                    <hr>
+                    <div id="div">
+                        <span id="sender">Hellow ..</span>
+                    </div>
+                    <span id="mesage"></span><button>SEND</button>
+                </section>
+                <section class="comments pink">
+                    <h4>COMMENTS</h4>
+                    <hr>
+                    <P id="comments"></P>
+                </section>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <h3>© 2022 JASDEs solutions</h3>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
