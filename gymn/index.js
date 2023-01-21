@@ -73,22 +73,22 @@ let a = document.getElementsByClassName("td");
         clicked[i].onclick = function(){
            switch(i){
             case 0:
-                window.location.assign("gymn/user.html");
+                window.location.assign("user.html");
                 break;
             case 1:
-                window.location.assign("gymn/user.html");
+                window.location.assign("user.html");
                 break;
             case 2:
-                window.location.assign("gymn/user.html");
+                window.location.assign("user.html");
                 break;
             case 3:
-                window.location.assign("gymn/clients.html");
+                window.location.assign("clients.html");
                 break;
             case 4:
-                window.location.assign("gymn/clients.html");
+                window.location.assign("clients.html");
                 break;
             case 5:
-                window.location.assign("gymn/clients.html");
+                window.location.assign("clients.html");
                 break;
            }
         }
