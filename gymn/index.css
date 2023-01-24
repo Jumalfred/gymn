@@ -690,6 +690,9 @@
             #product > img{
                 height: 206px;
             }
+             html{
+                 width: 100vh;
+             }        
             header{
                 width: 97.2%;
             }
